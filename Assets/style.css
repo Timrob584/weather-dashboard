@@ -10,7 +10,12 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: var(--dark)  ;
+    background-color: var(--dark);
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -55,6 +60,19 @@ body {
 
 .card-body {
     background-color: var(--secondary);
+}
+
+.info-card {
+height: 30vh;
+background-color: var(--secondary);
+border: 2px solid var(--primary);
+margin-top: 7px;
+}
+
+.forecast-card {
+height: 40 vh;
+background-color: var(--dark);
+margin-top: 10px;
 }
 
 .form-label {
