@@ -24,7 +24,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
     <!-- Header for Page -->
@@ -37,7 +37,7 @@
 <main class="flex-row justify-space-between">
     <div class="col-12 col-md-4">
     
-        <div class="card">
+        <div class="card search-card">
             <div class="card-body">
                 <h3 class="card-title">Search for a City:</h3>
                 <form id="user-form">
@@ -47,13 +47,13 @@
                 <button type="submit" form="user-form" value="submit" class="btn">Search</button>
             </div>
         </div>
-
-        <div class="card">
-            <h3 class="card-header text-uppercase">Search By Topic</h3>
-            <div id="language-buttons" class="card-body">
-              <button data-language="javascript" class="btn">JavaScript</button>
-              <button data-language="html" class="btn">HTML</button>
-              <button data-language="css" class="btn">CSS</button>
+        <!-- Searched Cities Card -->
+        <div class="card city-card">
+            <div id="city-buttons" class="card-body">
+              <h3 class="card-title">Cities:</h3>
+              <button data-city="" class="empty-btn"></button>
+              <button data-city="" class="empty-btn"></button>
+              <button data-city="" class="empty-btn"></button>
         </div>
     </div>
 </main>

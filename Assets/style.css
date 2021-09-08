@@ -1,15 +1,76 @@
-/* Font Families */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --primary: rgb(0, 0, 128);
+    --secondary: rgb(130, 201, 230);
+    --light: rgb(255, 255, 255);
+    --dark: rgb(192, 192, 192);
+    --border-radius:0.2rem;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--dark)  ;
+}
 
 .header {
-    background-color: rgb(22, 44, 240);
-    color: white;
+    background-color: var(--primary);
+    color: var(--light);
     height: 55px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
 
-.card-title {
-    font-family: 'Oswald', sans-serif;
+.btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--light);
+    border: none;
+    outline: none;
+    background-color: var(--primary);
 }
+
+.btn:hover {
+    color: var(--dark);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+  }
+ 
+  .card {
+      border:none;
+  }
+
+  .card.search-card {
+      height: 20vh;
+      border-bottom: solid var(--dark);
+  }
+  .card.city-card {
+      height: 80vh;
+  }
+
+.card-body {
+    background-color: var(--secondary);
+}
+
+.form-label {
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+    display: block;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 30%;
+    padding: 2%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid var(--light-dark);
+    border-radius: var(--border-radius);
+    display: block;
+  }
+  

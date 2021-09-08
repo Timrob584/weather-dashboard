@@ -1,0 +1,1 @@
+1. For the Searched Cities Card, I need to find the proper way to get the searched city buttons to append there once searched.
