@@ -22,10 +22,43 @@
       href="Assets/style.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
 </head>
 <body>
+    <!-- Header for Page -->
+<header>
+    <div class="header col-12">
+        <h1>Weather Dashboard</h1>
+    </div> 
+</header>
+    <!-- Search Card -->
+<main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
     
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Search for a City:</h3>
+                <form id="user-form">
+                    <label class="form-label" for="city"></label>
+                    <input name="cityName" id="cityName" type="text" autofocus="true" class="form-input" />
+                </form>
+                <button type="submit" form="user-form" value="submit" class="btn">Search</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-header text-uppercase">Search By Topic</h3>
+            <div id="language-buttons" class="card-body">
+              <button data-language="javascript" class="btn">JavaScript</button>
+              <button data-language="html" class="btn">HTML</button>
+              <button data-language="css" class="btn">CSS</button>
+        </div>
+    </div>
+</main>
+        
+     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="Assets/script.js"></script>

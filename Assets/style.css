@@ -1,0 +1,15 @@
+/* Font Families */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.header {
+    background-color: rgb(22, 44, 240);
+    color: white;
+    height: 55px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-title {
+    font-family: 'Oswald', sans-serif;
+}
