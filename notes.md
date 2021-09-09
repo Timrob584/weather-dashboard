@@ -5,3 +5,10 @@ https://rapidapi.com/blog/openweathermap-api-overview/javascript/
 
 ## To set up API
 https://rapidapi.com/community/api/open-weather-map/
+
+## For Recent Searches
+1. Create an array for recent searches and when they search a city, use local storage to push that city into the array.
+
+2. Use a loop to run through the recent searches and create a button for them.
+
+3. Use local storage to call the search function back when the recent search button is clicked on.
