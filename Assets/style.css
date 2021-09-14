@@ -92,3 +92,6 @@ margin-top: 10px;
     display: block;
   }
   
+  #current-title {
+      height: 30vh;
+  }
