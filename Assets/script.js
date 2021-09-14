@@ -14,15 +14,6 @@ var uvIndexValue = document.getElementById("uvIndex");
 var key = b6202def895aaf2a9e59056af64e69fd;
  
 
-var formSubmitHandler = function (e) {
-    if(!inputValueEl.value) {
-        return;
-    }
-    e.preventDefault();
-    var cityNameInput = inputValueEl.value.trim();
-    getWeather(cityNameInput);
-    inputValueEl.value = "";
-
 // Current Weather API
 function getWeather(city) {
     currentEl.innerHTML = "";
@@ -129,6 +120,16 @@ function saveCity(city) {
           cityBtnEl.appendChild(newCityBtn)
       }
   };
+
+  var formSubmitHandler = function (e) {
+    if(!inputValueEl.value) {
+        return;
+    }
+    e.preventDefault();
+    var cityNameInput = inputValueEl.value.trim();
+    getWeather(cityNameInput);
+    inputValueEl.value = "";
+
 
 function handleHistorySearch(e) {
     if (e.target.matches(".city-buttons")) {
