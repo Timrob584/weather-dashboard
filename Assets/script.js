@@ -138,5 +138,5 @@ function handleHistorySearch(e) {
         getApi(cityNameInput);
     }
 }
-    submitBtnEl.addEventListener("click", handleFormSubmit);
-    cityBtnEl.addEventListener("click", handleHistorySearch);
+submitBtnEl.addEventListener("click", handleFormSubmit);
+cityBtnEl.addEventListener("click", handleHistorySearch);
