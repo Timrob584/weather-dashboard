@@ -92,6 +92,10 @@ margin-top: 10px;
     display: block;
   }
   
-  #current-title {
-      height: 30vh;
+  .card.current-card {
+      height:30vh;
+  }
+
+  #title {
+      height: 40%;
   }
