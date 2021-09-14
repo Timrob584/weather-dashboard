@@ -14,7 +14,7 @@ function getWeather(city) {
             return response.json();
         })
         .then(function (data) {
-            // console.log(data);
+            console.log(data);
     
         var tempEl = document.createElement("p");
         tempEl.innerHTML = "Temperature: " + Math.round(data.main.temp) + " °F";
@@ -38,11 +38,41 @@ function getWeather(city) {
         weatherIcon.src ="https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
         currentTitle.appendChild(weatherIcon);
 
+        var lat = data.coord.lat
+        var lon = data.coord.lon
+        getUvIndex(lat,lon, city)
     })
 
+    function getUvIndex(lat, lon, city) {
+        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=&exclude=hourly,minutely,alerts&appid=" + key)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            // console.log(data);
+            uvIndex = data.current.uvi;
 
-        
-}
+            var uvIndexEl = document.createElement("div");
+            uvIndexEl.innerHTML += "UV Index: ";
+
+            var uvIndexBtn = document.createElement("button");
+            uvIndexBtn.innerHTML = uvIndex;
+            
+            uvIndexEl.appendChild(uvIndexBtn);
+            uv.appendChild(uvIndexEl);
+    
+
+            if (uvIndex <=3) {
+                uvIndexBtn.setAttribute("class", "btn-success col-2")
+            } else if (uvIndex >3 && uvIndex <=8) {
+                uvIndexBtn.setAttribute("class", "btn-warning col-2")
+            } else (uvIndex >8) 
+                uvIndexBtn.setAttribute("class", "btn-danger col-2")
+            })
+
+      
+        }
+    };
 // To prevent default behavior on-click
 function formSubmit(e) {
     e.preventDefault();
@@ -50,5 +80,6 @@ function formSubmit(e) {
     getWeather(citySearch);
     searchInputEl.value="";
 }
+
 
 submitBtnEl.addEventListener("click", formSubmit);
