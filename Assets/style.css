@@ -40,6 +40,11 @@ body {
     background-color: var(--primary);
 }
 
+#clearBtn {
+    background-color: var(--light);
+    color: black;
+}
+
 .btn:hover {
     color: var(--dark);
     transform: translate(0, 0);
@@ -51,7 +56,7 @@ body {
   }
 
   .card.search-card {
-      height: 20vh;
+      height: 30vh;
       border-bottom: solid var(--dark);
   }
   .card.city-card {
@@ -67,12 +72,6 @@ height: 30vh;
 background-color: var(--secondary);
 border: 2px solid var(--primary);
 margin-top: 7px;
-}
-
-.forecast-card {
-height: 40 vh;
-background-color: var(--dark);
-margin-top: 10px;
 }
 
 .form-label {
