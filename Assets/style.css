@@ -94,8 +94,13 @@ margin-top: 10px;
   
   .card.current-card {
       height:40vh;
+      background-color: var(--secondary);
   }
 
   #title {
       height: 40%;
+  }
+
+  .forecast {
+      background-color: var(--secondary);
   }
