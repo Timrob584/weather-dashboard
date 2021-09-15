@@ -1,10 +1,8 @@
 # weather-dashboard
 
 ## Motivation
+This weather dashboard allows users to search by city and access the weather information for the city.
 
-## Instructions
-### Mock Up
-![How it should Look](Assets/example.png)
 ### User Story
 AS A traveler
 I WANT to see the weather outlook for multiple cities
@@ -25,6 +23,9 @@ THEN I am again presented with current and future conditions for that city
 
 
 ## Demo
-![Screenshot of Site]()
+![Screenshot of Site](Assets/Dashboard.png)
 
 ## How to Use
+1. Type in the name of a city
+2. Hit submit
+3. The dashboard will pull up current weather information as well as a 5-day forecast.
