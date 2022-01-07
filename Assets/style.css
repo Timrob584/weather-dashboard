@@ -1,105 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 :root {
-    --primary: rgb(0, 0, 128);
-    --secondary: rgb(130, 201, 230);
-    --light: rgb(255, 255, 255);
-    --dark: rgb(192, 192, 192);
-    --border-radius:0.2rem;
+  --primary: rgb(0, 0, 128);
+  --secondary: rgb(130, 201, 230);
+  --light: rgb(255, 255, 255);
+  --dark: rgb(192, 192, 192);
+  --border-radius: 0.2rem;
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
-    background-color: var(--dark);
+  font-family: "Oswald", sans-serif;
+  background-color: var(--dark);
 }
 
 .flex-row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header {
-    background-color: var(--primary);
-    color: var(--light);
-    height: 55px;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
+  background-color: var(--primary);
+  color: var(--light);
+  height: 55px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
 }
 
 .btn {
-    font-size: 1.3rem;
-    text-decoration: none;
-    padding: 6px 5px;
-    width: 100%;
-    display: block;
-    margin: 5px 0;
-    border-radius: var(--border-radius);
-    color: var(--light);
-    border: none;
-    outline: none;
-    background-color: var(--primary);
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 6px 5px;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: var(--light);
+  border: none;
+  outline: none;
+  background-color: var(--primary);
 }
 
 #clearBtn {
-    background-color: var(--light);
-    color: black;
+  background-color: var(--light);
+  color: black;
 }
 
 .btn:hover {
-    color: var(--dark);
-    transform: translate(0, 0);
-    box-shadow: 2px 2px var(--dark);
-  }
- 
-  .card {
-      border:none;
-  }
+  color: var(--dark);
+  transform: translate(0, 0);
+  box-shadow: 2px 2px var(--dark);
+}
 
-  .card.search-card {
-      height: 30vh;
-      border-bottom: solid var(--dark);
-  }
-  .card.city-card {
-      height: 80vh;
-  }
+.card {
+  border: none;
+}
+
+.card.search-card {
+  height: 30vh;
+  border-bottom: solid var(--dark);
+}
+.card.city-card {
+  height: 80vh;
+}
 
 .card-body {
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .info-card {
-height: 30vh;
-background-color: var(--secondary);
-border: 2px solid var(--primary);
-margin-top: 7px;
+  height: 30vh;
+  background-color: var(--secondary);
+  border: 2px solid var(--primary);
+  margin-top: 7px;
 }
 
 .form-label {
-    font-size: 1.1rem;
-    margin: 0 0 0 5px;
-    display: block;
-  }
-  
-  .form-input {
-    width: 100%;
-    height: 30%;
-    padding: 2%;
-    margin: 5px 0;
-    font-size: 1.2rem;
-    border: 2px solid var(--light-dark);
-    border-radius: var(--border-radius);
-    display: block;
-  }
-  
-  .card.current-card {
-      height:40vh;
-      background-color: var(--secondary);
-  }
+  font-size: 1.1rem;
+  margin: 0 0 0 5px;
+  display: block;
+}
 
-  #title {
-      height: 40%;
-  }
+.form-input {
+  width: 100%;
+  height: 30%;
+  padding: 2%;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
+  display: block;
+}
 
-  .forecast {
-      background-color: var(--secondary);
-  }
+.card.current-card {
+  height: 40vh;
+  background-color: var(--secondary);
+}
+
+#title {
+  height: 40%;
+}
+
+.forecast {
+  background-color: var(--secondary);
+}
+
+#cityBtn {
+  display: block;
+}

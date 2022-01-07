@@ -106,12 +106,24 @@ function getWeather(city) {
 
     }
 };
+
 // To prevent default behavior on-click
 function formSubmit(e) {
     e.preventDefault();
     const citySearch = searchInputEl.value.trim();
     getWeather(citySearch);
     searchInputEl.value = "";
+
+    // To save searched city to local storage
+    window.localStorage.setItem("city", JSON.stringify(citySearch));
+
+    const cityString = window.localStorage.getItem("city");
+
+    const savedCity = JSON.parse(cityString);
+
+    const cityBtn = document.getElementById("cityBtn");
+
+    cityBtn.append(savedCity);
 }
 
 submitBtnEl.addEventListener("click", formSubmit);
